@@ -1,0 +1,192 @@
+<html>
+ <head>
+  <title>
+   Check In
+  </title>
+  <style>
+   body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            box-sizing: border-box;
+        }
+        .container {
+            width: 100%;
+            max-width: 375px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 20px;
+            margin: 0;
+        }
+        .header p {
+            font-size: 14px;
+            color: #666;
+        }
+        .photo-placeholder {
+            width: 100px;
+            height: 100px;
+            border: 1px solid #ccc;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .photo-placeholder img {
+            width: 50px;
+            height: 50px;
+        }
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            flex: 1;
+            font-size: 14px;
+        }
+        .form-group input {
+            flex: 2;
+            padding: 5px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .form-group .checkbox {
+            flex: 2;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        .form-group .checkbox input {
+            width: auto;
+            margin-right: 10px;
+        }
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        .button-group button {
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+        }
+        .button-group .proceed {
+            background-color: #007bff;
+            color: #fff;
+        }
+        .button-group .cancel {
+            background-color: #fff;
+            color: #888;
+            border: 1px solid #888;
+        }
+        @media (max-width: 400px) {
+            body {
+                margin: 0;
+            }
+            .container {
+                width: 100%;
+                padding: 10px;
+                margin: 0;
+            }
+            .button-group button {
+                font-size: 14px;
+                padding: 8px;
+            }
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="header">
+    <h1>
+     Check In
+    </h1>
+    <p>
+     The Photo is for verification purpose only
+    </p>
+   </div>
+   <div class="photo-placeholder">
+    <img alt="Placeholder for photo verification" height="50" src="https://storage.googleapis.com/a1aa/image/0bflvKwGTembKUYFdzGK9SjKyuXZTHNMjRAlg36qSpR05dyTA.jpg" width="50"/>
+   </div>
+   <div class="form-group">
+    <label for="name">
+     Name :
+    </label>
+    <input id="name" name="name" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="contact">
+     Contact no. :
+    </label>
+    <input id="contact" name="contact" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="email">
+     Email Address :
+    </label>
+    <input id="email" name="email" type="email"/>
+   </div>
+   <div class="form-group">
+    <label for="checkin">
+     Check-in-time :
+    </label>
+    <input id="checkin" name="checkin" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="date">
+     Date of meeting :
+    </label>
+    <input id="date" name="date" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="host">
+     Host :
+    </label>
+    <input id="host" name="host" type="text"/>
+   </div>
+   <div class="form-group">
+    <label for="idproof">
+     ID proof :
+    </label>
+    <div class="checkbox">
+     <input id="idproof" name="idproof" type="checkbox"/>
+    </div>
+   </div>
+   <div class="form-group">
+    <label for="purpose">
+     Purpose of visit :
+    </label>
+    <input id="purpose" name="purpose" type="text"/>
+   </div>
+   <div class="button-group">
+    <button class="proceed">
+     Proceed
+    </button>
+    <button class="cancel">
+     Cancel
+    </button>
+   </div>
+  </div>
+ </body>
+</html>
